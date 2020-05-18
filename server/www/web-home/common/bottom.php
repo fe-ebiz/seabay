@@ -1,3 +1,6 @@
+<?php if($_SERVER["REMOTE_ADDR"] == "61.74.233.194") { ?>
+</div>
+<?php } ?>
 <footer class="footer">
 	<div class="group">
 		<div class="terms-bar">
@@ -50,9 +53,6 @@
                                 </li>
                                 <li>
                                     <div class="fam_btn"><a href="http://ocean2you.co.kr/" target="_blank">오션투유리조트</a></div>
-                                </li>
-                                <li>
-                                    <div class="fam_btn"><a href="http://ramadapt.co.kr/" target="_blank">평택라마다앙코르호텔</a></div>
                                 </li>
                                 <li>
                                     <div class="fam_btn"><a href="http://seabay.co.kr/" target="_blank">씨베이호텔</a></div>

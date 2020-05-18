@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import '../parts/common';
+@import './parts/common';
 
 em,
 address {
@@ -12,13 +12,24 @@ address {
     display: none !important;
 }
 
+.footer{
+    text-align: left;
+    &>.group{
+        width: 1002px;
+    }
+}
+
+
+.footer address{
+    color: #9A9A9A;
+}
+
 @include screen-min(992px) {
     .footer {
         padding: 50px 0;
         background: #2F2F2F;
-        color: #9A9A9A;
+        color: #9A9A9A ;
         font-weight: normal;
-
         .terms-bar {
             padding-bottom: 25px;
 
@@ -261,14 +272,12 @@ address {
             .logo-box {
                 position: relative;
                 padding: 20px 0;
-
                 //overflow: hidden;
                 img {
                     display: inline-block;
-                    
+
                     &.logo {
                         height: 30px;
-                        margin-right: 5px;
                     }
 
                     &.logo-goco {
