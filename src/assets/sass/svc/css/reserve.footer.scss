@@ -17,6 +17,24 @@ address {
     &>.group{
         width: 1002px;
     }
+    
+}
+
+@media (max-width:1002px){
+    .footer{
+        &>.group{
+            width: 100%;
+            .terms-bar{
+                li{
+                    color: #9A9A9A !important;
+                    a{
+                        color: #9A9A9A !important;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
 
 

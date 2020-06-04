@@ -1,6 +1,3 @@
-<?php if($_SERVER["REMOTE_ADDR"] == "61.74.233.194") { ?>
-</div>
-<?php } ?>
 <footer class="footer">
 	<div class="group">
 		<div class="terms-bar">
@@ -52,17 +49,18 @@
                                     <div class="fam_btn">[호텔/리조트]</div>
                                 </li>
                                 <li>
-                                    <div class="fam_btn"><a href="http://ocean2you.co.kr/" target="_blank">오션투유리조트</a></div>
+                                    <div class="fam_btn"><a style="color: #a3a3a3;" href="http://ocean2you.co.kr/" target="_blank">오션투유리조트</a></div>
                                 </li>
                                 <li>
-                                    <div class="fam_btn"><a href="http://seabay.co.kr/" target="_blank">씨베이호텔</a></div>
+                                    <div class="fam_btn"><a style="color: #a3a3a3;"  href="http://seabay.co.kr/" target="_blank">씨베이호텔</a></div>
+                                    <div class="fam_btn"><a style="color: #a3a3a3;" href="http://hotelairsky.co.kr/" target="_blank">에어스카이호텔</a></div>
                                 </li>
                                 <li class="group-division" style="border-top: 1px dashed #a3a3a3; margin: 5px 10px"></li>
                                 <li class="group-name">
                                     <div class="fam_btn">[호텔위탁운영사]</div>
                                 </li>
                                 <li>
-                                    <div class="fam_btn"><a href="http://ebiznetworks.co.kr/home/program/?dd=WQwvfDZJKkYs" target="_blank">이비즈네트웍스</a></div>
+                                    <div class="fam_btn"><a style="color: #a3a3a3;" href="http://ebiznetworks.co.kr/home/program/?dd=WQwvfDZJKkYs" target="_blank">이비즈네트웍스</a></div>
                                 </li>
                             </ul>
                         </div>

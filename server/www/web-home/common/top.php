@@ -38,8 +38,9 @@
 	<script type="text/javascript" src="http://static.seabay.co.kr/svc/common/javascript/lib/datepicker/js/bootstrap-datepicker.min.js"></script>
 	<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/common.js"></script>
 
-	<link rel="stylesheet" href="http://static.ramadapt.co.kr/css/totalweb.css">
-	<script src="http://static.ramadapt.co.kr/js/totalweb.js"></script>
+	<!-- totalweb -->
+	<link rel="stylesheet" href="http://static.ocean2you.co.kr/css/renew/totalweb.css">
+	<script src="http://static.ocean2you.co.kr/js/renew/totalweb.js"></script>
 	
 	<script type="text/javascript" src="http://static.bscondo.co.kr/js/common_reserve.js?ver=<?=date("YmdHis")?>"></script>
 
