@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+@import url(https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css);
+
+/* */
+
+.rent-wrap {
+  position: relative;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 1.5;
+
+  .img-area {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+
+    figure {
+      position: relative;
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    .tbl-tit {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 20px;
+      font-family: "NanumSquareRound", sans-serif;
+    }
+  }
+
+  .grid-wrap {
+    background: #E6EBFF;
+
+    .grid-contents {
+      position: relative;
+      padding-top: 10px;
+    }
+  }
+
+  .img-area figure + .rent-wrap .grid-wrap .grid-contents {
+    margin-top: -20px;
+  }
+
+  .grid-wrap .grid-contents {
+    .tbl-base {
+      table-layout: fixed;
+      width: 900px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-top: 1px solid #989898;
+
+      thead, tbody {}
+
+      thead th, tbody td {
+        height: 40px;
+        border-bottom: 1px solid #989898;
+        vertical-align: middle;
+        line-height: 1.6;
+        font-family: "Nanum Gothic", sans-serif;
+        letter-spacing: -0.5px;
+      }
+
+      thead th {
+        background: #dadada;
+        text-align: center;
+      }
+
+      tbody td {
+        border-left: 1px solid #989898;
+        padding: 15px;
+        background: #fff;
+
+        &:first-child {
+          border-left: none;
+        }
+      }
+
+      &.tbl-1 td {
+        text-align: center;
+
+        &.nth-3 {
+          font-size: 20px;
+          line-height: 1.2;
+        }
+
+        &.nth-4 {
+          font-size: 20px;
+        }
+      }
+
+      &.tbl-2 {}
+    }
+
+    &.grid-type-2 {
+      padding-bottom: 30px;
+    }
+
+    .tbl-base.tbl-2 td {
+      &.nth-1 {
+        text-align: center;
+      }
+
+      &.nth-2 {
+        .row {
+          margin-top: 5px;
+        }
+
+        .inp-box {
+          display: block;
+
+          .lbl {
+            float: left;
+
+            + {
+              input[type=text], select.slt {
+                float: right;
+              }
+            }
+          }
+        }
+
+        .btn-gray {
+          margin-top: 5px;
+        }
+      }
+
+      &.nth-3 {
+        [class*=split-] {
+          display: inline-block;
+          box-sizing: border-box;
+          vertical-align: middle;
+        }
+
+        .split-1 {
+          width: 195px;
+          background: #f2f2f2;
+          padding: 8px 10px;
+          border: 1px solid #d7d7d7;
+
+          dl:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+
+          hr.sun {
+            border: none;
+            height: 1px;
+            background: #bcbcbc;
+            margin: 5px 0;
+          }
+
+          dl {
+            dt, dd {
+              display: inline-block;
+            }
+
+            dt {}
+
+            dd {
+              color: #ea000c;
+              float: right;
+            }
+          }
+        }
+
+        .split-2 {
+          width: 290px;
+          margin-left: 10px;
+          letter-spacing: -1px;
+
+          .btn-gray {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .btn-base {
+      border: none;
+      box-shadow: none;
+    }
+
+    .btn-gray {
+      height: 36px;
+      text-align: center;
+      line-height: 2.5;
+      font-size: 14px;
+      letter-spacing: -0.3px;
+      background: url(http://img.go.co.kr/btn_callBG.png) no-repeat;
+      box-sizing: border-box;
+      padding: 0 20px;
+      min-width: 125px;
+      border-radius: 8px;
+      color: #fff;
+    }
+
+    .fg-red-1 {
+      color: #ea000c;
+    }
+
+    .fwe-1 {
+      font-weight: 700;
+    }
+
+    .flt-r {
+      float: right;
+    }
+
+    .rdo-box, .inp-box {}
+
+    .rdo-box *, .inp-box * {
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    .inp, .slt {
+      display: inline-block;
+      width: 125px;
+      height: 28px;
+      box-shadow: none;
+      border: 1px solid #bbb;
+      box-sizing: border-box;
+      text-indent: 5px;
+    }
+  }
+}
+
