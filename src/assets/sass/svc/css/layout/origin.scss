@@ -7532,12 +7532,27 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 .event-banner-petroom{
     border-bottom: 1px solid #d9d9d9;
-    img{
+    a img{
         width: 100%;
-        
+        &.img-petroom-pc{
+            display: block;
+        }
+        &.img-petroom-mobile{
+            display: none;
+        }
     }   
 }
 
 @media (max-width:991px){
-
+    .event-banner-petroom{
+        a img{
+            &.img-petroom-pc{
+                display: none;
+            }
+            &.img-petroom-mobile{
+                display: block;
+            }
+        }
+    }
+        
 }
