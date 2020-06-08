@@ -7317,9 +7317,11 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
             }
 
             &.book-btn {
-                width: 33.9%;
-                max-width: 135px;
-
+                // width: 33.9%;
+                // max-width: 135px;
+                width: 174px;
+                padding-right: 4px;
+                margin-top: 6px;;
             }
 
             >img {
