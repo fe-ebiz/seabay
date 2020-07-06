@@ -1,33 +1,33 @@
 [
     {
         "name": "static",
-        "host": "192.168.20.138",
+        "host": "192.168.17.60",
         "protocol": "sftp",
         "port": 229,
         "username": "ebizimg",
-        "remotePath": "/home2/ebizimg/seabay.co.kr/",
+        "remotePath": "/home3/ebizimg/seabay.co.kr/",
         "privateKeyPath": "D:/FTP_Lite/key.ppk",
         "context": "./dist/",
         "passphrase": true
     },
     {
         "name": "assets-static",
-        "host": "192.168.20.138",
+        "host": "192.168.17.60",
         "protocol": "sftp",
         "port": 229,
         "username": "ebizimg",
-        "remotePath": "/home2/ebizimg/seabay.co.kr/static/",
+        "remotePath": "/home3/ebizimg/seabay.co.kr/static/",
         "privateKeyPath": "D:/FTP_Lite/key.ppk",
         "context": "./src/assets/static/",
         "passphrase": true
     },
     {
         "name": "assets-img",
-        "host": "192.168.20.138",
+        "host": "192.168.17.60",
         "protocol": "sftp",
         "port": 229,
         "username": "ebizimg",
-        "remotePath": "/home2/ebizimg/seabay.co.kr/img/",
+        "remotePath": "/home3/ebizimg/seabay.co.kr/img/",
         "privateKeyPath": "D:/FTP_Lite/key.ppk",
         "context": "./src/assets/img/",
         "passphrase": true

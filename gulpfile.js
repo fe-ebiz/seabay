@@ -33,6 +33,18 @@ function bSyncTest() {
 		}
 	});
 };
+
+function bSyncLand() {
+	browserSync.init({
+		// watch: true,
+		port: 3030,
+		startPath: './views/svc/landing/swim.html',
+		server: {
+			baseDir: './dist'
+		}
+	});
+};
+
 function template() {
 	return src(config.template.src, {since: lastRun(template)})
 		.pipe(fileinclude({
@@ -225,3 +237,6 @@ exports.default = parallel(bSync, watching);
 exports.serve = parallel(series(parallel(template), static, sassDev, img, etc, bSync), watching);
 exports.build = parallel(series(parallel(template), static, sassDev, img, etc, bSync), watching);
 exports.test = series(parallel(template), static, sassPrd, img, etc, copyTest, testPathServer, bSyncTest);
+
+exports.land = parallel(series(parallel(template), static, sassDev, img, etc, bSyncLand), watching);
+

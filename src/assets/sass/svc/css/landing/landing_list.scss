@@ -1,0 +1,56 @@
+/*씨베이 랜딩 관련*/
+/*[수영장]*/
+html{
+    /* font-size: 62.5%; */
+    font-size: 62.5%;
+}
+
+body{
+    /* font-size: calc(1.6rem + 3vw); */
+    font-size: 1.6rem;
+}
+
+.swim-wrap,.park-wrap{
+    max-width: 640px;
+    margin: 0 auto;
+    padding-bottom: calc(100/640 * 100vw);
+}
+
+.btn-box-ul{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    &>li{
+        a{
+            display: block;
+            padding-right: calc(2/640 * 100vw);
+        }
+        &:last-of-type {
+            a{
+                padding-right: 0;
+            }
+        }
+        
+    }
+}
+
+@media(min-width:640px){
+    .swim-wrap, .park-wrap{
+        padding-bottom: 101px;
+    }
+
+    .btn-box-ul{
+        width: 640px;
+        &>li{
+            a{
+                padding-right: 2px;
+            }
+            &:last-of-type {
+                a{
+                    padding-right: 0;
+                }
+            }  
+        }
+    }
+}
