@@ -44,13 +44,13 @@ include_once (INC_DIR."/class/go_basic.class.php");
                     <img src="http://img.seabay.co.kr/svc/img/landing/sebeaySwim_20200721/park/btn_park01.jpg" alt="무료 교향리 주차장">
                 </a>
                 <a href="http://kko.to/zebfW_4DB" target="_blank" title="페이지이동">
-                    <img src="http://img.seabay.co.kr/svc/img/landing/sebeaySwim_20200721/park/btn_park01.jpg" alt="무료 교향리 주차장">
+                    <img src="http://img.seabay.co.kr/svc/img/landing/sebeaySwim_20200721/park/btn_park02.jpg" alt="무료 교향리 주차장">
                 </a>
                 <a href="http://kko.to/ZR_4iVfYH" target="_blank" title="페이지이동">
-                    <img src="http://img.seabay.co.kr/svc/img/landing/sebeaySwim_20200721/park/btn_park01.jpg" alt="무료 교향리 주차장">
+                    <img src="http://img.seabay.co.kr/svc/img/landing/sebeaySwim_20200721/park/btn_park03.jpg" alt="무료 교향리 주차장">
                 </a>
                 <a href="http://kko.to/hRDti_fY0" target="_blank" title="페이지이동">
-                    <img src="http://img.seabay.co.kr/svc/img/landing/sebeaySwim_20200721/park/btn_park01.jpg" alt="무료 교향리 주차장">
+                    <img src="http://img.seabay.co.kr/svc/img/landing/sebeaySwim_20200721/park/btn_park04.jpg" alt="무료 교향리 주차장">
                 </a>
             </div>
             <div class="contents-logo">
