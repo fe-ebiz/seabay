@@ -45,6 +45,18 @@ function bSyncLand() {
 	});
 };
 
+
+function bSyncNotice() {
+	browserSync.init({
+		// watch: true,
+		port: 3030,
+		startPath: './views/svc/notice/index.html',
+		server: {
+			baseDir: './dist'
+		}
+	});
+};
+
 function template() {
 	return src(config.template.src, {since: lastRun(template)})
 		.pipe(fileinclude({
@@ -56,8 +68,21 @@ function template() {
 		.pipe(dest(config.template.dest))
 		.pipe(browserSync.stream({ match: '**/*.html' }));
 };
+
+// function templateAll() {
+// 	return src([config.template.src, config.template.parts])
+// 		.pipe(fileinclude({
+// 			prefix: '@@',
+// 			// basepath: '@file'
+// 			basepath: '@root'
+// 		}))
+// 		.pipe(htmlbeautify(config.htmlbeautify))
+// 		.pipe(dest(config.template.dest))
+// 		.pipe(browserSync.stream({ match: '**/*.html' }));
+// };
+
 function templateAll() {
-	return src([config.template.src, config.template.parts])
+	return src([config.template.src])
 		.pipe(fileinclude({
 			prefix: '@@',
 			// basepath: '@file'
@@ -65,8 +90,26 @@ function templateAll() {
 		}))
 		.pipe(htmlbeautify(config.htmlbeautify))
 		.pipe(dest(config.template.dest))
-		.pipe(browserSync.stream({ match: '**/*.html' }));
+		.pipe(browserSync.stream({
+			 match: '**/*.html' 
+		}));
 };
+
+
+function templateJson() {
+	return src([config.template.src])
+		.pipe(fileinclude({
+			prefix: '@@',
+			// basepath: '@file'
+			basepath: '@root'
+		}))
+		.pipe(htmlbeautify(config.htmlbeautify))
+		.pipe(dest(config.template.dest))
+		.pipe(browserSync.stream({
+			 match: '**/*.html' 
+		}));
+};
+
 function templateM() {
 	return src(config.template.src_m, {since: lastRun(template)})
 		.pipe(fileinclude({
@@ -152,7 +195,7 @@ function etc() {
 	return src(config.etc.src, {since: lastRun(etc)})
 		.pipe(dest(config.etc.dest));
 }
-function watching() {
+function watching(cb) {
 	watch([config.template.src], template);
 	watch([config.template.parts], templateAll);
 	watch([config.template.src_m], templateM);
@@ -164,6 +207,10 @@ function watching() {
 	watch(config.img.src, img);
 	watch(config.static.src, static);
 	watch(config.etc.src, etc);
+
+	watch(config.json.src, template);
+    watch(config.json.src, templateJson);
+	cb();
 };
 
 // util
@@ -239,4 +286,7 @@ exports.build = parallel(series(parallel(template), static, sassDev, img, etc, b
 exports.test = series(parallel(template), static, sassPrd, img, etc, copyTest, testPathServer, bSyncTest);
 
 exports.land = parallel(series(parallel(template), static, sassDev, img, etc, bSyncLand), watching);
+
+
+exports.notice = parallel(series(parallel(template), static, sassDev, img, etc, bSyncNotice), watching);
 

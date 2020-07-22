@@ -1,0 +1,26 @@
+<section class="sec notice-sec">
+    <div class="notice-wrapper wrapper-type1">
+        <div class="notice-content group">
+            <h1 class="title-type1 title">
+                공지사항
+            </h1>
+            <div class="tbl-wrapper" id="noticeTblWrapper">
+                <table class="tbl-type1 bd-x-0 list-tbl">
+                    <colgroup>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>내용</th>
+                            <th>등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @@loop('src/template/svc/notice/_temp/_list_notice.html','./svc/notice/_info_json/_info_notice.json')
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
