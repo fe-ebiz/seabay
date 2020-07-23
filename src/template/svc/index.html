@@ -487,6 +487,21 @@
     <!-- <span u="arrowleft" class="jssor-sprite arow-left" style="width: 21px; height: 32px; top: 200px; left: 20px;"></span>
     <span u="arrowright" class="jssor-sprite arow-right" style="width: 21px; height: 32px; top: 200px; right: 20px"></span> -->
 
+    <!-- 아고다 팝업 -->
+    <div class="pop-agoda">
+        <img src="http://img.seabay.co.kr/svc/img/popup/pop_agoda.jpg" alt="아고다 팝업">
+    </div>
+    <script>
+        //아고다 팝업용
+        $(document).ready(function(){
+            //3.2초 뒤 사라짐
+            setTimeout(function() {
+                $('.pop-agoda').hide();
+            },3200);
+        });
+    </script>
+
+
     @@include('src/template/svc/include/_footer.html')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>

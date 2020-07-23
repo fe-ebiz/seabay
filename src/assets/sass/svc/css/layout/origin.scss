@@ -7558,3 +7558,27 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     }
         
 }
+
+.pop-agoda{
+    // position: absolute;
+    position: fixed;
+    top: 130px;
+    left: 30px;
+    z-index: 100000;
+    width: 360px;
+    img{
+        width: 100%;
+    }
+}
+
+@media (max-width:991px){
+    .pop-agoda{
+        position: fixed;
+        top: 52%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        width: calc(360/560 *100vw);
+    }
+}

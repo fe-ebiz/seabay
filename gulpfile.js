@@ -137,14 +137,14 @@ function sassDev() {
 	return src(config.sass.src, {sourcemaps: true})
 		.pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
 		.pipe(autoprefixer())
-		.pipe(dest(config.sass.dest, {sourcemaps: true}))
+		.pipe(dest(config.sass.dest, {sourcemaps: false}))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 };
 function sassDevAll() {
 	return src([config.sass.src, config.sass.parts], {sourcemaps: true})
 		.pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
 		.pipe(autoprefixer())
-		.pipe(dest(config.sass.dest, {sourcemaps: true}))
+		.pipe(dest(config.sass.dest, {sourcemaps: false}))
 		.pipe(browserSync.stream({ match: '**/*.css' }));
 };
 function sassPrd() {
