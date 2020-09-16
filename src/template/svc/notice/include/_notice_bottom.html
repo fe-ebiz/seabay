@@ -11,18 +11,26 @@
 <!-- /#wrap -->
 
 <!-- script -->
-<!-- <script src="https://kit.fontawesome.com/3781a5bb61.js"></script> -->
-<script src="http://seacruisehotel.co.kr/static/js/libs/jquery.easing.min.js"></script>
-<script src="http://seacruisehotel.co.kr/static/js/libs/waypoints.min.js"></script>
-<script src="http://seacruisehotel.co.kr/static/js/libs/slick.min.js"></script>
+<script src="http://static.seabay.co.kr/svc/js/notice/jquery.easing.min.js"></script>
+<script src="http://static.seabay.co.kr/svc/js/notice/waypoints.min.js"></script>
+<script src="http://static.seabay.co.kr/svc/js/notice/slick.min.js"></script>
 
-<!-- http://static.entv.co.kr/dien -->
-<script type="text/javascript" src="http://seacruisehotel.co.kr/static/js/script.js"></script>
-<script type="text/javascript" src="http://seacruisehotel.co.kr/static/js/ui.js"></script>
-
-<!--[if lt IE 9]><script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/notice/script.js"></script>
+<script type="text/javascript" src="http://static.seabay.co.kr/svc/js/notice/ui.js"></script>
 
 
+<script>
+    $(document).ready(function(){
+        $(".faq-list li").on("click",function(){
+            let listPos = $(this).offset().top;
+            // let topPos = $(window).scrollTop();
+
+            $(window).scrollTop(listPos)
+
+            console.log(listPos);
+        });
+    });
+</script>
 
 </body>
 </html>

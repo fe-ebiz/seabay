@@ -339,13 +339,37 @@
     <div class="pop-agoda">
         <img src="http://img.seabay.co.kr/svc/img/popup/pop_agoda.jpg" alt="아고다 팝업">
     </div>
+        
+
     <script>
         //아고다 팝업용
         $(document).ready(function(){
-            //3.2초 뒤 사라짐
+            //3.0초 뒤 사라짐
             setTimeout(function() {
                 $('.pop-agoda').hide();
-            },3200);
+            },3000);
         });
     </script>
     <!--//// 아고다 팝업 -->
+
+    <!-- 위메프 팝업 -->
+    <!-- <div class="popup-event">
+        <div class="popup-box">
+            <a class="pop-url-pc" target="_blank" href="https://tour.wd.wemakeprice.com/khotel/detail/vendors?hotelId=2296831&checkin=2020-09-01&checkout=2020-09-02&numberOfAdults=2&agesOfChildren=&numberOfRooms=1">
+                <img src="http://img.seabay.co.kr/svc/img/popup/wemake_hotprice.png" alt="01">
+            </a>
+            <a class="pop-url-mobile" target="_blank" href="https://mtour.wd.wemakeprice.com/khotel/detail/vendors?hotelId=2296831&checkin=2020-09-01&checkout=2020-09-02&numberOfAdults=2&agesOfChildren=&numberOfRooms=1">
+                <img src="http://img.seabay.co.kr/svc/img/popup/wemake_hotprice.png" alt="02">
+            </a>
+        </div>
+        <div class="btn-pop-close-box">
+            <button class="btn-pop-close" type="button">X</button>
+        </div>
+    </div>
+
+    <script>
+        $(".btn-pop-close").on('click', function(){
+            $(".popup-event").css("display","none");
+        });
+    </script> -->
+    <!--//// 위메프 팝업 -->

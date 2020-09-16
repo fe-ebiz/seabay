@@ -7573,6 +7573,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
 @media (max-width:991px){
     .pop-agoda{
+        // display: none;
         position: fixed;
         top: 52%;
         left: 0;
@@ -7581,4 +7582,63 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         transform: translateY(-50%);
         width: calc(360/560 *100vw);
     }
+}
+
+
+
+/*팝업*/
+.popup-event{
+    /*주석처리 대신css로 안보이게*/
+    // display:none;
+    z-index: 100000;
+    position: absolute;
+    top:320px;
+    right: 160px;
+    width: 460px;
+    img{
+        width: 100%;
+    }
+    .popup-box{
+        a{
+            display: block;
+        }
+        .pop-url-mobile{
+            display: none;
+        }
+    }
+    .btn-pop-close-box{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        .btn-pop-close{
+            font-size: 22px;
+            font-weight: 900;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.0);
+            outline: none;
+        }
+    }
+}
+@media (max-width:767px) {
+    .popup-event{
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+
+        .popup-box{
+            .pop-url-mobile{
+                display: block;
+            }
+            .pop-url-pc{
+                display: none;
+            }
+        }
+        .btn-pop-close-box{
+            .btn-pop-close{
+                font-size: 3.8vw;
+            }
+        }
+    }
+    
 }
