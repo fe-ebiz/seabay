@@ -41,19 +41,20 @@
     }
 }
 
-
-.faq-top-wrap{
-    margin-bottom: 50px;
-    .faq-list{
-        background-color: #fff8e6;
-        border: none !important;
-        .faq-item{
-            .question{
-                border-top: 1px solid #bcb6aa;
-                border-bottom: 1px solid #bcb6aa;
-                font-weight: 600;
-            }
+.send-box{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+    .send-form{
+        background-color: #f3f3f3;
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        font-size: 16px;
+        .input-box{
+            display: flex;
+            justify-items: center;
         }
     }
 }
-

@@ -50,7 +50,7 @@ function bSyncNotice() {
 	browserSync.init({
 		// watch: true,
 		port: 3030,
-		startPath: './views/svc/notice/index.html',
+		startPath: './views/svc/notice_dev/index.html',
 		server: {
 			baseDir: './dist'
 		}
