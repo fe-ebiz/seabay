@@ -6663,7 +6663,7 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
     text-align: center;
     display: inline-block
 }
-}
+
 
 @media (max-width: 600px) {
     .room_detail .detail .box_left .amenitys .amenity_box img {
@@ -7651,4 +7651,141 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         }
     }
     
+}
+
+
+
+/*최상단탑배너[숙박대전]*/
+.top-banner-lodgment{
+    width: 100%;
+    .btn-go-area{
+        background-color: #ee7a01;
+        display: block;
+        width: 100%;
+        // display: flex;
+        // justify-content: center;
+        .img-box{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            img{
+                max-width: 1305px;
+                width: 100%;
+            }
+            .img-pc{
+                
+            }
+            .img-mobile{
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media(max-width:991px){
+    .top-banner-lodgment{
+        width: 100%;
+        .btn-go-area{
+            background-color: #ea7800;
+            display: block;
+            width: 100%;
+            // display: flex;
+            // justify-content: center;
+            .img-box{
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                img{
+                    max-width: 1305px;
+                    width: 100%;
+                }
+                .img-pc{
+                    display: none;
+                }
+                .img-mobile{
+                    display: block;
+                }
+    
+            }
+        }
+    }
+    
+}
+
+
+
+
+/*메인팝업[숙박대전]*/
+.pop-overflow-hidden{
+    overflow: hidden;
+}
+
+.popup-lodgment{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 200000;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;    
+    overflow-y: scroll;
+    display: none;
+    *{
+        box-sizing: border-box;
+    }
+    img{
+        width: 100%;
+    }
+
+    .pop-wrap{
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        justify-content: center;
+        .pop-contents{
+            position: relative;
+            .img-box{
+                display: block;
+            }
+            .btn-close-pop{
+                background: none;
+                position: absolute;
+                top: 9px;
+                right: 12px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                outline: none;
+            }
+            .btn-go-event{
+                position: absolute;
+                top: 762px;
+                left: 50px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media(max-width:991px){
+    .popup-lodgment{
+        .pop-wrap{
+            .pop-contents{
+                width: 80%;
+                .btn-close-pop{
+                    width: 6.42%;
+                    top: calc((9*1.13/991) * 100vw);
+                    right: 1.71%;
+                }
+                .btn-go-event{
+                    width: 24.57%;
+                    top: calc((762*1.13/991) * 100vw);
+                    left: 7.14%;
+                }
+            }
+        }
+    }
 }
