@@ -286,3 +286,38 @@
         }
     }
 }
+
+.event-room{
+    width: 100%;
+    // background-color: #175217;
+    position: relative;
+    padding: 2.3% 0;
+    .event-room-area{
+        width: 100%;
+        position: relative;
+        .event-main{
+            width: 100%;
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1090px;
+            }
+        }
+        .btn-go-reserve{
+            position: absolute;
+            // display: block;
+            display: none;
+            width: 55%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: 87%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}

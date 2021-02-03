@@ -18,7 +18,7 @@
 
 <body class="page-home">
 
-    @@include('src/template/svc/include/banner/_top_banner.html')
+    <!-- @include('src/template/svc/include/banner/_top_banner.html') -->
     @@include('src/template/svc/include/_header.html')
 
     <div class="main">
@@ -491,11 +491,84 @@
         </div>
     </div> -->
 
+    <!--객실 이벤트-->
+    <div class="pop-event-room">
+        <div class="pop-event-area">
+            <div class="pop-box">
+                <div class="pop-main">
+                    <img src="http://img.seabay.co.kr/svc/img/event_pop/ev_room/event_room_pop_main.jpg" alt="버튼">
+                </div>
+                <a href="/views/svc/event/event_room.html" target="_blank" class="btn-go-event-detail">
+                    <img src="http://img.seabay.co.kr/svc/img/event_pop/ev_room/btn_go_detail.png" alt="버튼">
+                </a>
+            </div>
+            <ul class="pop-btn-box-ul">
+                <li class="not-today-box">
+                    <button type="button" class="btn-not-today">오늘 다시 열지 않음</button>
+                </li>
+                <li class="close-pop-box">
+                    <button type="button" class="btn-close-pop">닫기</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script>
+        $(document).ready(function(){
+
+            //쿠키이름
+            let cokieName = "pop_event_room";
+            
+            //오늘 다시 열지 않음 체크
+            if($.cookie(cokieName) != undefined){
+                $('.pop-event-room').hide();
+            }
+
+            //오늘 다시 열지 않음 버튼
+            $(".pop-event-room .btn-not-today").on('click', function(){
+                console.log("성공");
+                addCookieData(cokieName);
+                $('.pop-event-room').hide();
+            });
+
+            //닫기
+            $(".pop-event-room .btn-close-pop").on('click', function(){
+                $(".pop-event-room").hide();
+            });
+
+            
+
+        });
+
+        //쿠키데이터 등록
+        addCookieData = function(popName){
+            
+            if($.cookie(popName) == undefined){
+                console.log("작동")
+                //초단위 테스트용
+                // let date = new Date;
+                // date.setTime(date.getTime() + 5*1000);
+
+                let date = 1;//하루
+                //쿠키가 없는 경우 쿠키를 추가
+                $.cookie(popName, 'Y', { expires: date});
+                //$.removeCookie('pop_liivemate');
+            } 
+        }
+
+    </script>
+
+    <!--.//객실 이벤트-->
+
+
+
+
+
+    <!-- <script>
         $(".btn-pop-close").on('click', function(){
             $(".popup-event").css("display","none");
         });
-    </script>
+    </script> -->
 
     <script>
         //아고다 팝업용

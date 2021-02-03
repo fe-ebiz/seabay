@@ -7789,3 +7789,127 @@ only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
         }
     }
 }
+
+.pop-event-room{
+    z-index: 100000;
+    position: fixed;
+    top: 130px;
+    left: 400px;
+    left: 390px;
+    *{
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .pop-event-area{
+        .pop-box{
+            position: relative;
+            .pop-main{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .btn-go-event-detail{
+                display: none;
+                position: absolute;
+                bottom: 1.5%;
+                left: 0;
+                right: 0;
+                width: 33%;
+                padding: 2.4% 0;
+                padding-left: 5%;
+                margin: 0 auto;
+                text-align: center;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .pop-btn-box-ul{
+            background-color: #ccc;
+            display: flex;
+            height: 34px;
+            li{
+                width: 50%;
+                button{
+                    outline: none;
+                    border: none;
+                    background: none;
+                    height: 100%;
+                    letter-spacing: -0.4px;
+                    line-height: 1.1;
+                    font-size: 15px;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                .btn-not-today{
+                    color: #333;
+                    // margin-right: 10px;
+                }
+
+                .btn-close-pop{
+                    background-color: #848484;
+                    
+                    color: #fff;
+                    
+                }
+            }
+            li.not-today-box{
+                // width: 82%;
+                // text-align: right;
+            }
+            li.close-pop-box{
+                // width: 18%;
+                
+            }
+        }
+        
+    }
+}
+
+
+
+@media(max-width:991px){
+    .pop-event-room{
+        top: 52%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        // width: calc(400/560 *100vw);
+        width: 86%;
+        .pop-event-area{
+            .pop-box{
+                
+                .pop-main{
+    
+                }
+                .btn-go-event-detail{
+                    
+                }
+            }
+            .pop-btn-box-ul{
+                height: calc(50/560 * 100vw);
+                li{
+                    button{
+                        font-size: calc(20/560 *100vw);
+                    }
+                    .btn-not-today{
+                        // margin-right: calc(10/560 *100vw);
+                    }
+    
+                    .btn-close-pop{
+                        
+                    }
+                }
+                li.not-today-box{
+                }
+                li.close-pop-box{
+                    
+                }
+            }
+            
+        }
+    }
+}
